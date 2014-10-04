@@ -17,6 +17,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import model.student.Attendance;
 
 /**
  *
@@ -213,6 +214,7 @@ public class WeeklyAttendanceView extends javax.swing.JFrame {
                 new WeeklyAttendanceView().setVisible(true);
             }
         });
+        
     }
     
     
