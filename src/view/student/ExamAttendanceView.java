@@ -22,13 +22,13 @@ import javax.swing.Timer;
  *
  * @author Pubudu
  */
-public class WeeklyAttendanceView extends javax.swing.JFrame {
+public class ExamAttendanceView extends javax.swing.JFrame {
     Date time;
 
     /**
      * Creates new form WeeklyAttendanceView
      */
-    public WeeklyAttendanceView() {
+    public ExamAttendanceView() {
         time = new Date();
         initComponents(); 
     }
