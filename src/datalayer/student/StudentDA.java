@@ -22,7 +22,7 @@ public class StudentDA {
     }
     
     public static Student searchStudent(String studetnID) throws SQLException, ClassNotFoundException {
-        String sql = "Select * From student Where studentID='" + studetnID + "'";
+        /*String sql = "Select * From student Where studentID='" + studetnID + "'";
         ResultSet rst = DBHandle.getData(DBConnection.getConnection(), sql);
         if (rst.next()) {
             String first_name = rst.getString("first_name");
@@ -40,7 +40,8 @@ public class StudentDA {
             return student;
         } else {
             return null;
-        }
+        }*/
+        return null;
     }
     public static int deleteStudent(String studentID) throws SQLException, ClassNotFoundException {
         String sql = "Delete From student Where studentID='" + studentID + "'";
