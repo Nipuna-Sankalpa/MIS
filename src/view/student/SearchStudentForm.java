@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-import utilities.ComboBoxUtility;
+import util.ComboBoxUtility;
 
 /**
  *
