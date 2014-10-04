@@ -60,12 +60,15 @@ public class ExamAttendanceView extends javax.swing.JFrame {
         studentIdText = new javax.swing.JTextField();
         firstNameText = new javax.swing.JTextField();
         lastNameText = new javax.swing.JTextField();
-        tuteCheck = new javax.swing.JCheckBox();
         img = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         confirmBtn = new javax.swing.JButton();
         resetBtn = new javax.swing.JButton();
         searchBtn = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        examFeeLabel = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        monthlyFee = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Weekly Attendance");
@@ -83,8 +86,6 @@ public class ExamAttendanceView extends javax.swing.JFrame {
         dateLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dateLabel.setText("date");
 
-        tuteCheck.setText("Tute given");
-
         img.setIcon(new javax.swing.ImageIcon("F:\\Pubudu\\MIS\\res\\user1.png")); // NOI18N
 
         jLabel4.setText("Attendance details");
@@ -94,6 +95,14 @@ public class ExamAttendanceView extends javax.swing.JFrame {
         resetBtn.setText("Reset");
 
         searchBtn.setText("Search");
+
+        jLabel5.setText("Exam Fee :");
+
+        examFeeLabel.setText("status");
+
+        jLabel6.setText("Monthly Fee :");
+
+        monthlyFee.setText("status");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,7 +119,8 @@ public class ExamAttendanceView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -119,7 +129,6 @@ public class ExamAttendanceView extends javax.swing.JFrame {
                                         .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(41, 41, 41)
                                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(tuteCheck)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(confirmBtn)
                                         .addGap(47, 47, 47)
@@ -135,7 +144,14 @@ public class ExamAttendanceView extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(timeLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(dateLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(65, 65, 65))))))
+                                .addGap(65, 65, 65))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(examFeeLabel)
+                                .addGap(111, 111, 111)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(monthlyFee)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -159,9 +175,13 @@ public class ExamAttendanceView extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(lastNameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(28, 28, 28)
-                .addComponent(tuteCheck)
-                .addGap(37, 37, 37)
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(examFeeLabel)
+                    .addComponent(jLabel6)
+                    .addComponent(monthlyFee))
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -220,17 +240,20 @@ public class ExamAttendanceView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton confirmBtn;
     private javax.swing.JLabel dateLabel;
+    private javax.swing.JLabel examFeeLabel;
     private javax.swing.JTextField firstNameText;
     private javax.swing.JLabel img;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField lastNameText;
+    private javax.swing.JLabel monthlyFee;
     private javax.swing.JButton resetBtn;
     private javax.swing.JButton searchBtn;
     private javax.swing.JTextField studentIdText;
     private javax.swing.JLabel timeLabel;
-    private javax.swing.JCheckBox tuteCheck;
     // End of variables declaration//GEN-END:variables
 }
