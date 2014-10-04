@@ -7,8 +7,8 @@ package datalayer.student;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import model.student.Student;
-import utilities.DBConnection;
-import utilities.DBHandle;
+import util.DBConnection;
+import util.DBHandle;
 
 /**
  *
