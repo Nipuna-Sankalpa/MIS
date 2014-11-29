@@ -9,5 +9,8 @@ package datalayer.exam;
  * @author Mampitiya
  */
 public class ExamDA {
+    public static void main(String[] args) {
+        System.out.println("Nipuna Sankalpa");
+    }
     
 }
